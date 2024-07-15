@@ -1,5 +1,10 @@
+import { OrientalTestComponent } from "../components";
 const HomePage = () => {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <OrientalTestComponent />
+    </div>
+  );
 };
 
 export default HomePage;
