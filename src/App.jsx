@@ -1,8 +1,28 @@
+import { Routes, Route } from "react-router-dom";
+import {
+  AboutPage,
+  ContactPage,
+  HomePage,
+  NotFounfPage,
+  ProductPage,
+  SearchPage,
+} from "./pages";
+import NavComponent from "./components/NavComponent";
+
 const App = () => {
   return (
-    <div className="text-underline">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <>
+      <NavComponent />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/product" element={<ProductPage />} />
+        <Route path="/promo" element={<ProductPage />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="*" element={<NotFounfPage />} />
+      </Routes>
+    </>
   );
 };
 
