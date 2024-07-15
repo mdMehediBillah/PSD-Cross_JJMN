@@ -10,7 +10,7 @@ import FooterComponent from "./FooterComponent";
 
 // export all components
 
-export default {
+export {
   BestSelerComponent,
   ChickenGrill,
   HeroComponent,
