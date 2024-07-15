@@ -7,12 +7,10 @@ import {
   ProductPage,
   SearchPage,
 } from "./pages";
-import NavComponent from "./components/NavComponent";
 
 const App = () => {
   return (
     <>
-      <NavComponent />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
